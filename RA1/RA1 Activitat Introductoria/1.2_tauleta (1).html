@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Taules i formulari de pel·lícules</title>
+    <style>
+        table.borders td, table.borders th { border: 1px solid black; }
+    </style>
+</head>
+<body>
+
+    <h1>Llistat de pel·lícules</h1>
+
+    <table>
+        <tr>
+            <th>Títol</th>
+            <th>Gènere</th>
+            <th>Valoració</th>
+            <th>Recomanable</th>
+        </tr>
+        <tr>
+            <td>Pulp Fiction</td>
+            <td>Acció/Violència</td>
+            <td>9</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>La vida de Brian</td>
+            <td>Comèdia</td>
+            <td>10</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>Crepúsculo</td>
+            <td>Acció</td>
+            <td>5</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Madagascar</td>
+            <td>Animació</td>
+            <td>8</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>Interstellar</td>
+            <td>Ciència-ficció</td>
+            <td>9</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>Forrest Gump</td>
+            <td>Drama</td>
+            <td>10</td>
+            <td>Sí</td>
+        </tr>
+    </table>
+
+    <h2>Taula amb vores</h2>
+    <table class="borders" style="border: 3px solid #0066CC; border-collapse: collapse;">
+        <tr>
+            <th>Títol</th>
+            <th>Gènere</th>
+            <th>Valoració</th>
+            <th>Recomanable</th>
+        </tr>
+        <tr>
+            <td>Pulp Fiction</td>
+            <td>Acció/Violència</td>
+            <td>9</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>La vida de Brian</td>
+            <td>Comèdia</td>
+            <td>10</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>Crepúsculo</td>
+            <td>Acció</td>
+            <td>5</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Madagascar</td>
+            <td>Animació</td>
+            <td>8</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>Interstellar</td>
+            <td>Ciència-ficció</td>
+            <td>9</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>Forrest Gump</td>
+            <td>Drama</td>
+            <td>10</td>
+            <td>Sí</td>
+        </tr>
+    </table>
+
+    <h2>Directors de les pel·lícules</h2>
+    <table class="borders" style="border: 1px solid black; border-collapse: collapse;">
+        <tr>
+            <th>Pel·lícula</th>
+            <th>Director</th>
+            <th>Any</th>
+        </tr>
+        <tr>
+            <td>Pulp Fiction</td>
+            <td>Quentin Tarantino</td>
+            <td>1994</td>
+        </tr>
+        <tr>
+            <td>La vida de Brian</td>
+            <td>Terry Jones</td>
+            <td>1979</td>
+        </tr>
+        <tr>
+            <td>Crepúsculo</td>
+            <td>Catherine Hardwicke</td>
+            <td>2008</td>
+        </tr>
+        <tr>
+            <td>Madagascar</td>
+            <td>Eric Darnell i Tom McGrath</td>
+            <td>2005</td>
+        </tr>
+        <tr>
+            <td>Interstellar</td>
+            <td>Christopher Nolan</td>
+            <td>2014</td>
+        </tr>
+        <tr>
+            <td>Forrest Gump</td>
+            <td>Robert Zemeckis</td>
+            <td>1994</td>
+        </tr>
+    </table>
+
+    <h2>Horari de projeccions</h2>
+    <table class="borders" style="border: 1px solid black; border-collapse: collapse;">
+        <tr>
+            <th>Dia</th>
+            <th>Hora</th>
+            <th>Sala</th>
+        </tr>
+        <tr>
+            <td>Dilluns</td>
+            <td>18:00</td>
+            <td>Sala 1</td>
+        </tr>
+        <tr>
+            <td>Dimecres</td>
+            <td>20:30</td>
+            <td>Sala 2</td>
+        </tr>
+        <tr>
+            <td>Dissabte</td>
+            <td>17:00</td>
+            <td>Sala 3</td>
+        </tr>
+    </table>
+
+    <h2>Formulari de contacte</h2>
+    <section>
+        <form id="myform">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom">
+
+            <label for="comentari">Comentari:</label>
+            <textarea id="comentari" name="comentari" rows="4" cols="30"></textarea>
+
+            <button type="submit">Envia</button>
+
+            <input type="checkbox" id="novetats" name="novetats">
+            <label for="novetats">Vull rebre novetats</label>
+
+            <label>Recomenaries el lloc web?</label>
+            <input type="radio" id="si" name="recomana" value="si">
+            <label for="si">Sí</label>
+            <input type="radio" id="no" name="recomana" value="no">
+            <label for="no">No</label>
+        </form>
+    </section>
+
+        <h2>Exercici 12: taula amb cel·les fusionades (colspan i rowspan)</h2>
+    <table class="borders" style="border: 1px solid black; border-collapse: collapse;">
+        <tr>
+            <td rowspan="2">A1</td>
+            <td colspan="2">B1</td>
+            <td>D1</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">B2</td>
+            <td>D2</td>
+        </tr>
+        <tr>
+            <td colspan="2">A3 i B3</td>
+        </tr>
+    </table>
+
+    <p><a href="index.html">Torna a l'índex</a></p>
+
+</body>
+</html>

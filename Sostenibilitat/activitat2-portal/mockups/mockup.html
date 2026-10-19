@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mockup · Inversió Responsable</title>
+  <style>
+    :root {
+      --verd: #14532d;
+      --verd-clar: #e8f3ec;
+      --ambre: #c77d19;
+      --text: #1f2933;
+      --fons: #fafbfa;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+      background: var(--fons);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    h1, h2, h3 { font-family: Georgia, serif; color: var(--verd); line-height: 1.2; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 6vw;
+      background: var(--verd);
+      color: #fff;
+    }
+    header .marca { font-family: Georgia, serif; font-size: 1.4rem; font-weight: 700; }
+    header .marca span { color: var(--ambre); }
+    nav span {
+      margin-left: 1.2rem;
+      font-size: 0.95rem;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 3px;
+    }
+    nav span.actiu { border-bottom-color: var(--ambre); }
+    .hero {
+      padding: 3rem 6vw;
+      background: var(--verd-clar);
+    }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3rem); }
+    .hero p { max-width: 60ch; margin-top: 1rem; font-size: 1.1rem; }
+    .bloc {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      padding: 3rem 6vw;
+      background: #fff;
+    }
+    .bloc article { max-width: 75ch; }
+    .bloc h2 { font-size: 1.6rem; margin-bottom: 1rem; }
+    .bloc p { margin-bottom: 1rem; }
+    blockquote {
+      padding: 1rem 1.5rem;
+      background: var(--verd-clar);
+      border-left: 4px solid var(--ambre);
+      font-style: italic;
+      border-radius: 0 10px 10px 0;
+    }
+    aside {
+      background: var(--verd-clar);
+      border-radius: 10px;
+      padding: 1.5rem;
+      align-self: start;
+    }
+    aside dt { font-weight: 700; color: var(--verd); margin-top: 0.8rem; }
+    aside dd { color: #6b7280; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 0.8rem; text-align: left; border-bottom: 1px solid #e5e7eb; }
+    th { background: var(--verd); color: #fff; }
+    tbody tr:nth-child(even) { background: var(--verd-clar); }
+    .targetes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .targeta {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 1.5rem;
+    }
+    .targeta h3 { margin-bottom: 0.5rem; }
+    .targeta p { font-size: 0.95rem; }
+    .peu {
+      background: var(--verd);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 6vw;
+      font-size: 0.9rem;
+    }
+    footer p:last-child { color: #b7d6c4; font-size: 0.8rem; }
+    .etiqueta {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.2rem 0.7rem;
+      background: var(--ambre);
+      color: #fff;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="marca">Sosteni<span>Web</span></div>
+    <nav>
+      <span class="actiu">Rendibilitat amb impacte positiu</span>
+      <span>Selecció positiva d'empreses</span>
+      <span>Principis PRI</span>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="etiqueta">Mockup d'alta fidelitat</span>
+    <h1>Rendibilitat amb impacte positiu</h1>
+    <p>Guanyar diners i millorar el món no són objectius incompatibles: la inversió responsable cerca les dues coses alhora.</p>
+  </section>
+
+  <section class="bloc">
+    <article>
+      <h2>Què vol dir rendibilitat amb impacte?</h2>
+      <p>A més del retorn financer, es mesura què passa amb els diners un cop invertits: reducció d'emissions, llocs de treball dignes i millor governança.</p>
+      <blockquote>Invertir és decidir quin futur es finança.</blockquote>
+    </article>
+    <aside>
+      <h2>Glossari</h2>
+      <dl>
+        <dt>ESG</dt>
+        <dd>Ambiental, Social i Governança.</dd>
+        <dt>Greenwashing</dt>
+        <dd>Vendre com a sostenible allò que no ho és.</dd>
+        <dt>SFDR</dt>
+        <dd>Reglament de divulgació de sostenibilitat de la UE.</dd>
+      </dl>
+    </aside>
+  </section>
+
+  <section class="bloc">
+    <article>
+      <h2>Formes de selecció</h2>
+      <table>
+        <thead>
+          <tr><th>Mètode</th><th>Com actua</th><th>Exemple</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Exclusió</td><td>Descarta activitats perjudicials</td><td>Fora tabac o carbó</td></tr>
+          <tr><td>Selecció positiva</td><td>Triar els líders de cada sector</td><td>Millor energètica en renovables</td></tr>
+          <tr><td>Integració ESG</td><td>Inclo criteris ESG a l'anàlisi</td><td>Risc climàtic al model</td></tr>
+        </tbody>
+      </table>
+      <h2>Com es tria una empresa</h2>
+      <div class="targetes">
+        <div class="targeta">
+          <h3>1. Dades ESG</h3>
+          <p>Puntuació en ambiental, social i governança.</p>
+        </div>
+        <div class="targeta">
+          <h3>2. Anàlisi financera</h3>
+          <p>Deute, ingressos i perspectiva de creixement.</p>
+        </div>
+        <div class="targeta">
+          <h3>3. Verificació</h3>
+          <p>Informes publicats i absència de greenwashing.</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <footer class="peu">
+    <p>Andrei · Hugo · Unai</p>
+    <p>MP0373 + MP1708 · Portal col·labatiu de sostenibilitat</p>
+  </footer>
+</body>
+</html>
